@@ -56,7 +56,16 @@ header, section, main, footer { position: relative; z-index: 3; opacity: 0; tran
 
 .profile-header { text-align: center; padding: 70px 20px 10px; }
 .profile-image-wrapper { position: relative; width: 130px; height: 130px; margin: 0 auto 18px; transform-style: preserve-3d; }
-.profile-img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid transparent; background: linear-gradient(#000, #000) padding-box, linear-gradient(135deg, var(--gold-accent), #222) border-box; box-shadow: 0 15px 35px rgba(0,0,0,0.9); padding: 4px; transform: translateZ(20px); }
+
+/* Foto redonda e limpa (sem o quadro) */
+.profile-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.9); 
+    transform: translateZ(20px); 
+}
 
 .status-pulse { position: absolute; bottom: 8px; right: 8px; width: 20px; height: 20px; background-color: var(--gold-accent); border: 3px solid #050505; border-radius: 50%; animation: pulseGold 2s infinite; transform: translateZ(30px); }
 
