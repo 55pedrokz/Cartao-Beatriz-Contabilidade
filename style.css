@@ -57,7 +57,6 @@ header, section, main, footer { position: relative; z-index: 3; opacity: 0; tran
 .profile-header { text-align: center; padding: 70px 20px 10px; }
 .profile-image-wrapper { position: relative; width: 130px; height: 130px; margin: 0 auto 18px; transform-style: preserve-3d; }
 
-/* Foto redonda e limpa (sem o quadro) */
 .profile-img { 
     width: 100%; 
     height: 100%; 
@@ -83,6 +82,9 @@ header, section, main, footer { position: relative; z-index: 3; opacity: 0; tran
 .pulse-whatsapp .icon-circle { background: #111; border: 1px solid var(--gold-accent); color: var(--gold-accent); box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); animation: pulseGold 3s infinite; }
 .quick-btn span { color: var(--text-secondary); font-size: 10px; font-weight: 600; text-shadow: 0 2px 4px rgba(0,0,0,0.9); }
 
+/* Transforma a imagem em branco no hover na seção de quick-actions */
+.quick-btn:hover .icon-circle .btn-icon-img { filter: brightness(0) invert(1); }
+
 .services-menu { padding: 0 25px; display: flex; flex-direction: column; gap: 14px; flex: 1; transform-style: preserve-3d; }
 .list-btn { display: flex; align-items: center; background: var(--glass-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 15px; text-decoration: none; color: var(--text-main); cursor: pointer; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5), var(--inner-light); transition: all 0.3s ease; transform-style: preserve-3d; }
 .list-btn > * { transform: translateZ(30px); }
@@ -96,6 +98,7 @@ header, section, main, footer { position: relative; z-index: 3; opacity: 0; tran
 .social-btn { width: 42px; height: 42px; border-radius: 50%; background: var(--glass-bg); border: 1px solid var(--glass-border); display: flex; justify-content: center; align-items: center; color: var(--gold-accent); text-decoration: none; font-size: 16px; transition: all 0.3s; cursor: pointer;}
 .social-btn:hover { background: var(--gold-accent); color: #000; border-color: var(--gold-accent); transform: scale(1.15); }
 
+/* Filtro padrão converte imagem preta em dourado */
 .btn-icon-img { width: 20px; height: 20px; object-fit: contain; filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(575%) hue-rotate(5deg) brightness(92%) contrast(88%); transition: filter 0.3s; }
 .social-btn:hover .btn-icon-img { filter: brightness(0); }
 

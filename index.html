@@ -50,25 +50,27 @@
                     <span>Salvar Contato</span>
                 </button>
                 
-                <a href="https://wa.me/5512991594055" class="quick-btn whatsapp pulse-whatsapp" target="_blank">
+                <a href="https://wa.me/5512991594055?text=Olá,%20Beatriz!%20Acessei%20o%20seu%20cartão%20digital%20e%20gostaria%20de%20tirar%20uma%20dúvida." class="quick-btn whatsapp pulse-whatsapp" target="_blank">
                     <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
                     <span>WhatsApp</span>
                 </a>
 
-                <a href="https://wa.me/5512991594055?text=Olá,%20gostaria%20de%20agendar%20uma%20reunião%20online!" class="quick-btn" target="_blank">
+                <a href="https://wa.me/5512991594055?text=Olá!%20Gostaria%20de%20agendar%20uma%20reunião%20para%20conversarmos%20sobre%20a%20minha%20contabilidade." class="quick-btn" target="_blank">
                     <div class="icon-circle"><i class="fas fa-video"></i></div>
                     <span>Reunião</span>
                 </a>
                 
-                <a href="mailto:bea.a_siqueira@hotmail.com" class="quick-btn" target="_blank">
-                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
-                    <span>E-mail</span>
-                </a>
+                <button id="btn-services" class="quick-btn" title="Meus Serviços">
+                    <div class="icon-circle">
+                        <img src="img/simbolo.png" alt="Serviços" class="btn-icon-img" style="width: 26px; height: 26px;">
+                    </div>
+                    <span>Serviços</span>
+                </button>
             </section>
 
             <main class="services-menu delay-2">
                 
-                <a href="https://wa.me/5512991594055?text=Olá,%20preciso%20de%20ajuda%20com%20meu%20Imposto%20de%20Renda%202026" class="list-btn highlight-ir" target="_blank">
+                <a href="https://wa.me/5512991594055?text=Olá,%20Beatriz!%20Preciso%20de%20ajuda%20com%20a%20minha%20Declaração%20de%20Imposto%20de%20Renda." class="list-btn highlight-ir" target="_blank">
                     <div class="list-icon"><i class="far fa-file-alt"></i></div>
                     <div class="list-text">
                         <h3>Imposto de Renda <span class="badge-ir">2026</span></h3>
@@ -77,11 +79,11 @@
                     <i class="fas fa-chevron-right arrow"></i>
                 </a>
 
-                <a href="https://wa.me/5512991594055?text=Olá,%20quero%20abrir%20meu%20CNPJ/MEI" class="list-btn" target="_blank">
+                <a href="https://wa.me/5512991594055?text=Olá,%20Beatriz!%20Preciso%20de%20ajuda%20para%20abrir%20ou%20regularizar%20a%20minha%20empresa%20(MEI/CNPJ).%20Como%20funciona?" class="list-btn" target="_blank">
                     <div class="list-icon"><i class="fas fa-store"></i></div>
                     <div class="list-text">
                         <h3>Abertura e Regularização</h3>
-                        <p>MEI, Microempresa e CNPJ</p>
+                        <p>MEI, ME e EPP</p>
                     </div>
                     <i class="fas fa-chevron-right arrow"></i>
                 </a>
@@ -104,9 +106,7 @@
                 
                 <button id="btn-qr" class="social-btn" title="Meu QR Code"><i class="fas fa-qrcode"></i></button>
                 
-                <button id="btn-services" class="social-btn" title="Meus Serviços">
-                    <img src="img/simbolo.png" alt="Serviços" class="btn-icon-img">
-                </button>
+                <a href="mailto:bea.a_siqueira@hotmail.com" class="social-btn" title="Enviar E-mail" target="_blank"><i class="fas fa-envelope"></i></a>
                 
                 <div class="divider"></div>
                 <button id="btn-share" class="social-btn share"><i class="fas fa-share-nodes"></i></button>
@@ -126,7 +126,7 @@
             <div id="services-modal" class="qr-modal">
                 <div class="qr-content services-content">
                     <button id="close-services" class="close-qr"><i class="fas fa-times"></i></button>
-                    <h3>Meus Serviços</h3>
+                    <h3>Serviços Prestados</h3>
                     
                     <ul class="services-list-modal">
                         <li><i class="fas fa-check-circle"></i> Abertura, Regularização e Fechamento de Empresas</li>
