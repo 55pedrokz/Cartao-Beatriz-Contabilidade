@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Beatriz - Contabilidade</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mockup-shadow"></div>
+
+    <div class="phone-mockup">
+        <div class="notch"></div>
+
+        <div class="app-screen">
+            
+            <div id="splash-screen" class="splash-screen">
+                <div class="splash-spinner"></div>
+                <p>A iniciar...</p>
+            </div>
+
+            <div class="bg-overlay-animated"></div>
+            <div id="particles-container"></div> 
+            
+            <header class="profile-header">
+                <div class="profile-image-wrapper" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <img src="img/Fotoperfil.jpeg" alt="Beatriz" class="profile-img">
+                    <div class="status-pulse" title="Online"></div>
+                </div>
+                
+                <div class="profile-info">
+                    <h1>Beatriz Siqueira</h1>
+                    <h2>CONTABILIDADE</h2>
+                    <div class="tags-container">
+                        <span class="crc-badge" data-tilt><i class="fas fa-shield-check"></i> CRC SP-355917/O</span>
+                        <span class="br-badge" data-tilt><i class="fas fa-globe-americas"></i> Todo o Brasil</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="quick-actions delay-1">
+                <button id="btn-vcard" class="quick-btn" title="Guardar Contacto">
+                    <div class="icon-circle" data-tilt data-tilt-scale="1.1"><i class="fas fa-user-plus"></i></div>
+                    <span>Salvar Contato</span>
+                </button>
+                
+                <a href="https://wa.me/5512991594055" class="quick-btn whatsapp pulse-whatsapp" target="_blank">
+                    <div class="icon-circle" data-tilt data-tilt-scale="1.1"><i class="fab fa-whatsapp"></i></div>
+                    <span>WhatsApp</span>
+                </a>
+
+                <a href="https://wa.me/5512991594055?text=Olá,%20gostaria%20de%20agendar%20uma%20reunião%20online!" class="quick-btn" target="_blank">
+                    <div class="icon-circle" data-tilt data-tilt-scale="1.1"><i class="fas fa-video"></i></div>
+                    <span>Reunião</span>
+                </a>
+                
+                <a href="mailto:bia.a_siqueira@hotmail.com" class="quick-btn" target="_blank">
+                    <div class="icon-circle" data-tilt data-tilt-scale="1.1"><i class="fas fa-envelope"></i></div>
+                    <span>E-mail</span>
+                </a>
+            </section>
+
+            <main class="services-menu delay-2">
+                
+                <a href="https://wa.me/5512991594055?text=Olá,%20preciso%20de%20ajuda%20com%20meu%20Imposto%20de%20Renda%202026" class="list-btn highlight-ir" target="_blank" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="list-icon"><i class="far fa-file-alt"></i></div>
+                    <div class="list-text">
+                        <h3>Imposto de Renda <span class="badge-ir">2026</span></h3>
+                        <p>Faça já a sua declaração</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+
+                <a href="https://wa.me/5512991594055?text=Olá,%20quero%20abrir%20meu%20CNPJ/MEI" class="list-btn" target="_blank" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="list-icon"><i class="fas fa-store"></i></div>
+                    <div class="list-text">
+                        <h3>Abertura e Regularização de Empresas</h3>
+                        <p>MEI, Microempresa e CNPJ</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+
+                <button id="btn-pix" class="list-btn pix-btn" data-chave="12991594055" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="list-icon pix-color"><i class="fab fa-pix"></i></div>
+                    <div class="list-text">
+                        <h3>Pagamento Seguro</h3>
+                        <p>Copiar chave PIX (Nubank)</p>
+                    </div>
+                    <i class="fas fa-copy arrow"></i>
+                </button>
+
+            </main>
+
+            <footer class="social-footer delay-3">
+                <a href="https://instagram.com/bea.asiqueira" class="social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+                <a href="#" class="social-btn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                
+                <button id="btn-qr" class="social-btn" title="Meu QR Code"><i class="fas fa-qrcode"></i></button>
+                
+                <button id="btn-services" class="social-btn" title="Meus Serviços">
+                    <img src="img/simbolo.png" alt="Serviços" class="btn-icon-img">
+                </button>
+                
+                <div class="divider"></div>
+                <button id="btn-share" class="social-btn share"><i class="fas fa-share-nodes"></i></button>
+            </footer>
+
+            <div id="toast" class="toast-notification">Notificação</div>
+
+            <div id="qr-modal" class="qr-modal">
+                <div class="qr-content">
+                    <button id="close-qr" class="close-qr"><i class="fas fa-times"></i></button>
+                    <h3>Meu Cartão</h3>
+                    <div class="qr-img-bg">
+                        <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://bea.asiqueira" alt="QR Code">
+                    </div>
+                    <p>Aponte a câmera para acessar</p>
+                </div>
+            </div>
+
+            <div id="services-modal" class="qr-modal">
+                <div class="qr-content services-content">
+                    <button id="close-services" class="close-qr"><i class="fas fa-times"></i></button>
+                    <h3>Meus Serviços</h3>
+                    
+                    <ul class="services-list-modal">
+                        <li><i class="fas fa-check-circle"></i> Abertura, Regularização e Fechamento de Empresas</li>
+                        <li><i class="fas fa-check-circle"></i> Planeamento Tributário Individual e Empresarial</li>
+                        <li><i class="fas fa-check-circle"></i> Emissão de Guias de Impostos</li>
+                        <li><i class="fas fa-check-circle"></i> Obrigações Fiscais e Contabilísticas</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
